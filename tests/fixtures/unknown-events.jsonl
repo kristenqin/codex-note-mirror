@@ -1,0 +1,2 @@
+{"type":"some_new_event","payload":{"value":"未知内容"}}
+{"type":"message","role":"user","content":"正常消息"}

@@ -1,0 +1,2 @@
+{"type":"message","role":"user","content":"你好","session_id":"simple123","created_at":"2026-06-08T10:00:00+08:00"}
+{"type":"message","role":"assistant","content":"你好，有什么可以帮你？","session_id":"simple123","created_at":"2026-06-08T10:01:00+08:00"}

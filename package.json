@@ -1,19 +1,43 @@
 {
-  "name": "mvp-doc-workspace",
+  "name": "codex-note-mirror",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Documentation-first workspace for defining the next MVP.",
+  "description": "Local CLI that mirrors visible Codex JSONL chat sessions into Markdown notes.",
+  "bin": {
+    "codex-note-mirror": "dist/cli.js"
+  },
   "scripts": {
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:unit": "vitest run tests",
+    "typecheck": "tsc --noEmit",
+    "build": "tsup src/cli.ts --format esm --dts --clean",
     "docs:check": "doc-pipeline check",
     "docs:build": "doc-pipeline build",
     "docs:dev": "doc-pipeline dev",
-    "verify": "npm run docs:check"
+    "verify": "npm run typecheck && npm run test && npm run docs:check"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "devDependencies": {
-    "doc-pipeline": "file:../doc-pipeline/packages/cli"
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^25.9.2",
+    "@types/prompts": "^2.4.9",
+    "doc-pipeline": "file:../doc-pipeline/packages/cli",
+    "tsup": "^8.5.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
+  },
+  "dependencies": {
+    "commander": "^15.0.0",
+    "fast-glob": "^3.3.3",
+    "fs-extra": "^11.3.5",
+    "gray-matter": "^4.0.3",
+    "prompts": "^2.4.2",
+    "zod": "^4.4.3"
   }
 }

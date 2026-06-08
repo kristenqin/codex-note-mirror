@@ -1,0 +1,4 @@
+{"type":"message","role":"user","content":"第一问"}
+{"type":"message","role":"assistant","content":"第一答"}
+{"type":"message","role":"user","content":"第二问"}
+{"type":"message","role":"assistant","content":"第二答"}

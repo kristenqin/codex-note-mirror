@@ -1,0 +1,4 @@
+{"type":"message","role":"user","content":"运行测试"}
+{"type":"tool_call","name":"shell","args":{"cmd":"pnpm test"}}
+{"type":"tool_result","content":"Tests passed"}
+{"type":"message","role":"assistant","content":"测试已经通过。"}
