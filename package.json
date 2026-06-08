@@ -1,9 +1,29 @@
 {
   "name": "codex-note-mirror",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "Local CLI that mirrors visible Codex JSONL chat sessions into Markdown notes.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristenqin/codex-note-mirror-docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kristenqin/codex-note-mirror-docs/issues"
+  },
+  "homepage": "https://github.com/kristenqin/codex-note-mirror-docs#readme",
+  "keywords": [
+    "codex",
+    "notes",
+    "markdown",
+    "jsonl",
+    "cli"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "bin": {
     "codex-note-mirror": "dist/cli.js"
   },
@@ -26,7 +46,7 @@
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^25.9.2",
     "@types/prompts": "^2.4.9",
-    "doc-pipeline": "file:../doc-pipeline/packages/cli",
+    "doc-pipeline": "^0.1.4",
     "tsup": "^8.5.1",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3",
