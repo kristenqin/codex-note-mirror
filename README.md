@@ -71,10 +71,22 @@ MVP 支持：
 
 ## 4. 安装
 
+### npm 安装
+
+```bash
+npm install -g codex-note-mirror
+```
+
+也可以直接使用：
+
+```bash
+npx codex-note-mirror --help
+```
+
 ### 本地开发安装
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/kristenqin/codex-note-mirror.git
 cd codex-note-mirror
 npm install
 ```

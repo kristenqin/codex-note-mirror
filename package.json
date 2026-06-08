@@ -6,12 +6,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kristenqin/codex-note-mirror-docs.git"
+    "url": "git+https://github.com/kristenqin/codex-note-mirror.git"
   },
   "bugs": {
-    "url": "https://github.com/kristenqin/codex-note-mirror-docs/issues"
+    "url": "https://github.com/kristenqin/codex-note-mirror/issues"
   },
-  "homepage": "https://github.com/kristenqin/codex-note-mirror-docs#readme",
+  "homepage": "https://github.com/kristenqin/codex-note-mirror#readme",
   "keywords": [
     "codex",
     "notes",
