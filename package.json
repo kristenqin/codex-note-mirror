@@ -1,6 +1,6 @@
 {
   "name": "codex-note-mirror",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Local CLI that mirrors visible Codex JSONL chat sessions into Markdown notes.",
   "license": "MIT",
@@ -34,10 +34,12 @@
     "test:unit": "vitest run tests",
     "typecheck": "tsc --noEmit",
     "build": "tsup src/cli.ts --format esm --dts --clean",
+    "postbuild": "chmod +x dist/cli.js",
     "docs:check": "doc-pipeline check",
     "docs:build": "doc-pipeline build",
     "docs:dev": "doc-pipeline dev",
-    "verify": "npm run typecheck && npm run test && npm run docs:check"
+    "verify": "npm run typecheck && npm run test && npm run docs:check",
+    "prepublishOnly": "npm run verify && npm run build"
   },
   "engines": {
     "node": ">=20"
