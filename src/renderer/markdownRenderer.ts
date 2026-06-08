@@ -13,9 +13,15 @@ function yamlString(value: string | undefined): string {
   return JSON.stringify(value ?? "");
 }
 
+export function escapeSyncMarkers(content: string): string {
+  return content
+    .replaceAll(SYNC_START, "&lt;!-- CODEX_SYNC_START --&gt;")
+    .replaceAll(SYNC_END, "&lt;!-- CODEX_SYNC_END --&gt;");
+}
+
 function renderMessage(message: VisibleMessage): string {
   const heading = message.role === "user" ? "User" : "Codex";
-  return `### ${heading}\n\n${message.content.trim()}`;
+  return `### ${heading}\n\n${escapeSyncMarkers(message.content.trim())}`;
 }
 
 export function renderSyncBlock(visibleMessages: VisibleMessage[]): string {
@@ -42,4 +48,3 @@ export function renderMarkdown({ session, visibleMessages, syncHash }: RenderMar
 
   return `${frontmatter}\n\n# ${title}\n\n${renderSyncBlock(visibleMessages)}\n\n## 我的补充\n`;
 }
-
