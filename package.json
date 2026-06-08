@@ -1,0 +1,21 @@
+{
+  "name": "codex-history-markdown-sync",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Export local Codex history JSONL into clean editable Markdown transcripts.",
+  "bin": {
+    "codex-history-markdown-sync": "./scripts/codex-history-markdown-sync.mjs"
+  },
+  "scripts": {
+    "sync:codex-history": "node scripts/codex-history-markdown-sync.mjs",
+    "test": "node scripts/test-codex-history-markdown-sync.mjs",
+    "test:codex-history-markdown-sync": "node scripts/test-codex-history-markdown-sync.mjs",
+    "audit": "node scripts/audit-codex-history-markdown-sync.mjs",
+    "audit:codex-history-markdown-sync": "node scripts/audit-codex-history-markdown-sync.mjs",
+    "verify": "npm run test && npm run audit"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

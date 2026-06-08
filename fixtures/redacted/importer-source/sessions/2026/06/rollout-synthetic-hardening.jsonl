@@ -1,0 +1,13 @@
+{"timestamp":"2026-06-01T00:00:00.000Z","type":"response_item","payload":{"type":"message","role":"system","content":[{"type":"text","text":"Synthetic system text must be redacted"}]}}
+{"timestamp":"2026-06-01T00:00:01.000Z","type":"session_meta","payload":{"id":"session_synthetic_hardening","timestamp":"2026-06-01T00:00:01.000Z","cwd":"/Users/example/Desktop/private-project","originator":"codex","source":"desktop","thread_source":"local","agent_role":"default","model_provider":"openai","git":{"origin":"git@example.invalid/private/repo.git"}}}
+{"timestamp":"2026-06-01T00:00:02.000Z","type":"turn_context","payload":{"turn_id":"turn_synthetic_hardening_001","cwd":"/Users/example/Desktop/private-project","current_date":"2026-06-01","timezone":"Asia/Shanghai","approval_policy":"never","sandbox_policy":"workspace-write","model":"gpt-test","collaboration_mode":"Default"}}
+{"timestamp":"2026-06-01T00:00:03.000Z","type":"response_item","payload":{"type":"user_message","role":"user","content":[{"type":"text","text":"Synthetic user text must be redacted"}]}}
+{"timestamp":"2026-06-01T00:00:04.000Z","type":"response_item","payload":{"type":"function_call","name":"functions.exec_command","arguments":"{\"cmd\":\"cat /Users/example/private.txt\"}","call_id":"call_synthetic_hardening_001"}}
+{"timestamp":"2026-06-01T00:00:05.000Z","type":"response_item","payload":{"type":"function_call_output","call_id":"call_synthetic_hardening_001","output":"Synthetic command output must be redacted"}}
+{"timestamp":"2026-06-01T00:00:06.000Z","type":"response_item","payload":{"type":"reasoning","summary":"Synthetic reasoning must be redacted","encrypted_content":"synthetic encrypted content"}}
+{"timestamp":"2026-06-01T00:00:07.000Z","type":"response_item","payload":{"type":"agent_message","role":"assistant","content":[{"type":"text","text":"Synthetic assistant text must be redacted"}]}}
+{"timestamp":"2026-06-01T00:00:08.000Z","type":"response_item","payload":{"type":"custom_tool_call","name":"custom.synthetic","input":{"path":"/Users/example/private-input"},"status":"completed"}}
+{"timestamp":"2026-06-01T00:00:09.000Z","type":"event_msg","payload":{"type":"token_count","info":{"total_token_usage":{"input_tokens":100,"output_tokens":25}}}}
+{"timestamp":"2026-06-01T00:00:10.000Z","type":"event_msg","payload":{"type":"user_message","message":"Synthetic event user noise must stay out of clean export","text":"Synthetic event user noise must stay out of clean export"}}
+{"timestamp":"2026-06-01T00:00:11.000Z","type":"event_msg","payload":{"type":"agent_message","message":"Synthetic event assistant noise must stay out of clean export","text":"Synthetic event assistant noise must stay out of clean export"}}
+not valid json

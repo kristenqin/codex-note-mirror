@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+
+# Local export outputs
+codex-history-markdown-export/
+out/
+tmp/
+
+# Runtime state
+.codex-history-sync-state.json
