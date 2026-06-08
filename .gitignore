@@ -1,10 +1,12 @@
 node_modules/
 .DS_Store
+dist-docs/
 
 # Local export outputs
-codex-history-markdown-export/
 out/
 tmp/
 
-# Runtime state
-.codex-history-sync-state.json
+# Generated documentation state
+.doc-pipeline/report.json
+.doc-pipeline/agent-report.json
+.doc-pipeline/tmp/

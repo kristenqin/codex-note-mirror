@@ -1,38 +1,24 @@
-# Codex History Markdown Sync
+---
+id: project-overview
+type: overview
+route: /
+tags: [mvp, documentation]
+order: 10
+---
 
-Standalone CLI for exporting local Codex history JSONL into clean, editable Markdown transcripts.
+# Project Workspace
 
-The default export is optimized for human reading: it keeps visible user/Codex messages and excludes internal event noise such as token counts, lifecycle events, reasoning records, system prompts, and archived sessions.
+This repository is currently reset to a documentation-first workspace.
 
-## Quick Start
+Business scope, MVP boundaries, implementation requirements, and acceptance criteria are intentionally undefined until the next MVP document set is written and reviewed.
 
-```bash
-npm run sync:codex-history -- --output-dir /Users/qyx/Desktop/project/codex-history-markdown-export --once --max-files 20 --max-source-bytes 10485760 --max-total-output-bytes 104857600
-```
+## Current State
 
-Preview counts without writing files:
+- Business implementation has been removed.
+- Previous product-definition documents have been removed.
+- Doc Pipeline configuration remains available for writing and previewing the next document set.
+- Agent documentation rules remain available in `AGENTS.md`.
 
-```bash
-npm run sync:codex-history -- --output-dir /tmp/codex-history-test --once --stats --max-files 20
-```
+## Next Step
 
-Inspect raw event-like messages explicitly:
-
-```bash
-npm run sync:codex-history -- --output-dir /tmp/codex-history-raw --once --mode raw --include-archived --include-tool-events
-```
-
-## Project Layout
-
-- `scripts/codex-history-markdown-sync.mjs`: CLI implementation.
-- `scripts/test-codex-history-markdown-sync.mjs`: focused behavior tests.
-- `scripts/audit-codex-history-markdown-sync.mjs`: documentation and guardrail audit.
-- `docs/codex-history-markdown-sync.md`: detailed usage docs.
-- `fixtures/redacted/`: synthetic JSONL fixture for tests.
-- `.agents/`: spec-first artifacts for maintenance.
-
-## Verify
-
-```bash
-npm run verify
-```
+Define the MVP-stage documents first, then implement only against those approved documents.

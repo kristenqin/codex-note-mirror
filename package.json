@@ -1,21 +1,19 @@
 {
-  "name": "codex-history-markdown-sync",
+  "name": "mvp-doc-workspace",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Export local Codex history JSONL into clean editable Markdown transcripts.",
-  "bin": {
-    "codex-history-markdown-sync": "./scripts/codex-history-markdown-sync.mjs"
-  },
+  "description": "Documentation-first workspace for defining the next MVP.",
   "scripts": {
-    "sync:codex-history": "node scripts/codex-history-markdown-sync.mjs",
-    "test": "node scripts/test-codex-history-markdown-sync.mjs",
-    "test:codex-history-markdown-sync": "node scripts/test-codex-history-markdown-sync.mjs",
-    "audit": "node scripts/audit-codex-history-markdown-sync.mjs",
-    "audit:codex-history-markdown-sync": "node scripts/audit-codex-history-markdown-sync.mjs",
-    "verify": "npm run test && npm run audit"
+    "docs:check": "doc-pipeline check",
+    "docs:build": "doc-pipeline build",
+    "docs:dev": "doc-pipeline dev",
+    "verify": "npm run docs:check"
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "doc-pipeline": "file:../doc-pipeline/packages/cli"
   }
 }

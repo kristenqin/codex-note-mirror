@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "label": "Overview",
+      "page": "project-overview",
+      "order": 10
+    },
+    {
+      "label": "Agent Docs Rules",
+      "page": "agent-doc-rules",
+      "order": 20
+    }
+  ]
+}
