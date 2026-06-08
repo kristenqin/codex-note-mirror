@@ -2,13 +2,43 @@
   "items": [
     {
       "label": "Overview",
-      "page": "project-overview",
-      "order": 10
+      "page": "overview"
     },
     {
       "label": "Agent Docs Rules",
-      "page": "agent-doc-rules",
-      "order": 20
+      "page": "agent-doc-rules"
+    },
+    {
+      "label": "Codex Execution Prompt",
+      "page": "00-codex-execution-prompt"
+    },
+    {
+      "label": "PRD",
+      "page": "01-prd"
+    },
+    {
+      "label": "Technical Design",
+      "page": "02-technical-design"
+    },
+    {
+      "label": "Parser Spec",
+      "page": "03-parser-spec"
+    },
+    {
+      "label": "Markdown Output Spec",
+      "page": "04-markdown-output-spec"
+    },
+    {
+      "label": "Task Breakdown",
+      "page": "05-task-breakdown"
+    },
+    {
+      "label": "Test Plan",
+      "page": "06-test-plan"
+    },
+    {
+      "label": "README Draft",
+      "page": "07-readme-draft"
     }
   ]
 }
